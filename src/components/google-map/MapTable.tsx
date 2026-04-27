@@ -1,15 +1,10 @@
 import React, { useState } from "react";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 
-import { Location, locationsData } from "./locations.tsx"
+import { Location, locationsData, center } from "./locations.tsx"
 
 function MapTable() {
   const [selectedLocation, setSelectedLocation] = useState<Location[]>([]);
-
-    const center = {
-        lat: 20.5937,
-        lng: 78.9629,
-    };
 
     const containerStyle = {
         width: "100%",

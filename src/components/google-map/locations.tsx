@@ -5,6 +5,11 @@ export type Location = {
   lng: number;
 };
 
+export const center = {
+    lat: 20.5937,
+    lng: 78.9629,
+};
+
 export const locationsData: Location[] = [
   {
     id: 1,
